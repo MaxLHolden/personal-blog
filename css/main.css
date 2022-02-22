@@ -1,0 +1,106 @@
+
+ @import url(post.css);
+ @import url(card.css);
+ @import url(mobile.css);
+
+ html, body, h1{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #f9f7ff;
+ }
+a{
+    color: white;
+}
+button{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;    
+    justify-content: center;    
+    border: none;
+    line-height: 1.5;
+    color: #212529;
+    border-radius: .45rem;
+    margin: 10px 0px;
+    max-width: 150px;
+    min-width: 65px;
+    max-height: 200px;
+    box-shadow:black 0px 7px 16px -8px;
+}
+
+.caption{
+    margin: 0;
+    align-self: center;
+}
+
+.icon{
+    width: 55%;
+    max-width: 90px;
+    height: 85%;
+    max-height: 90px;
+    align-self: center;
+    padding: 5px;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: minmax(80px, 110px) 1fr minmax(0px, 110px);
+    grid-template-rows: 15vh 80vh 5vh;
+    grid-template-areas: "avatar header padding" 
+                         "side-panel content padding"
+                         "footer footer padding";
+    background: #2a2438;
+}
+
+#header{
+    display: flex;
+    grid-area: header;
+    margin: 10px;
+    min-width: 300px;
+    max-width: 850px;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+
+#avatar{
+    grid-area: avatar;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    grid-area: side-panel;
+    margin: .5rem;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#posts{
+    display: flex;
+    grid-area: content;
+    background-color: #2d2b33;
+}
+
+#footer{
+    background-color: #2d2b33;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    text-align: center;
+}
+
+.read-more{
+    align-self: flex-end;
+}
