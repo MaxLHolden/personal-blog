@@ -44,11 +44,11 @@ button{
 
 #content{
     display: grid;
-    grid-template-columns: minmax(80px, 110px) 1fr minmax(0px, 110px);
+    grid-template-columns: minmax(80px, 110px) 1fr;
     grid-template-rows: 15vh 80vh 5vh;
-    grid-template-areas: "avatar header padding" 
-                         "side-panel content padding"
-                         "footer footer padding";
+    grid-template-areas: "avatar header" 
+                         "side-panel content"
+                         "footer footer";
     background: #2a2438;
 }
 
@@ -56,7 +56,6 @@ button{
     display: flex;
     grid-area: header;
     margin: 10px;
-    min-width: 300px;
     max-width: 850px;
     flex-direction: column;
     justify-content: space-around;  

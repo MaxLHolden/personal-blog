@@ -1,6 +1,8 @@
 .card{
     background-color: #615b70 ;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: .9fr .1fr;
     border-radius: 10px;
     height: min-content;
     padding: 10px;
@@ -17,6 +19,9 @@
     box-shadow: 0 8px 16px 0 #212529;
 }
 
+#preview-image{
+    margin: 10px;
+}
 @media (max-width: 800px)
 {
     .card{

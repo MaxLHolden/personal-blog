@@ -22,10 +22,8 @@
     }
 
     .card{
-        width: 35vw;
-    }
-    #content{
-        grid-template-columns: minmax(80px, 110px) 1fr 0px;
+        width: 55vw;
+        height: max-content;
     }
 }
     
